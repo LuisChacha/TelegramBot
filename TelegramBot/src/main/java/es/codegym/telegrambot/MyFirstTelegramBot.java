@@ -23,6 +23,9 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
         else if (getMessageText().contains("hola")){
             sendTextMessageAsync("Hola. Cuál es tu nombre?");
         }
+        else if (getMessageText().contains("me llamo")){
+            sendTextMessageAsync("Encantado de conocerte, soy *Gato*");
+        }
         else
             sendTextMessageAsync("Mensaje no esperado :(");
     }
