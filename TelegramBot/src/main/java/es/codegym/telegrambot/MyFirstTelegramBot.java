@@ -52,35 +52,32 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
         if (getCallbackQueryButtonKey().equals("step_4_btn")) {
             setUserGlory(30);
             sendTextMessageAsync(STEP_5_TEXT,
-                    Map.of("Enviar al robot garra! +30 de fama", "step_5_btn",
-                            "Quitar al robot garra","step_5_btn"));
+                    Map.of("Encender y ponerse la GoPro! +30 de fama", "step_5_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("step_5_btn")) {
             setUserGlory(40);
             sendTextMessageAsync(STEP_6_TEXT,
-                    Map.of("Entregar un sorbo de aceite al robot", "step_6_btn",
-                            "Limpiar con el robot", "step_6_btn"));
+                    Map.of("Correr por los tejados, grabar con la GoPro! +40 de fama", "step_6_btn",
+                            "Atacar a otros gatos desde tu escondite con la GoPro +40 de fama", "step_6_btn",
+                            "Atacar a los perros desde tu escondite con la GoPro +40 de fama!", "step_6_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("step_6_btn")) {
             setUserGlory(40);
             sendTextMessageAsync(STEP_7_TEXT,
-                    Map.of("Tomarse una foto con el robot", "step_7_btn",
-                            "Reconocer como lo maximo al Robot", "step_7_btn"));
+                    Map.of("Romper la contrasena", "step_7_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("step_7_btn")) {
-            setUserGlory(40);
+            setUserGlory(50);
             sendTextMessageAsync(STEP_8_TEXT,
-                    Map.of("Darle respiro al robot", "step_8_btn",
-                            "Darle puntos al Robot", "step_8_btn"));
+                    Map.of("Salir al patio", "step_8_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("step_8_btn")) {
-            setUserGlory(40);
-            sendTextMessageAsync(FINAL_TEXT,
-                    Map.of("Eso fue todo con el Robot", ""));
+            setUserGlory(50);
+            sendTextMessageAsync(FINAL_TEXT);
         }
 
 
